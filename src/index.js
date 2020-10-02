@@ -20,7 +20,7 @@ exports.avg = function avg (array) {
   if (!array || !array.length) {
     return 0
 } else {
-    const avg = array.reduce((a, b) => a + b, 0) / array.length;
+    const avg = array.reduce((a, b) => a + b) / array.length;
     return avg;
 }
 }
