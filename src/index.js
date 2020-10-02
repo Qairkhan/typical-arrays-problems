@@ -1,6 +1,11 @@
 
 exports.min = function min (array) {
-  return 0;
+  if (!array || !array.lenght) {
+    return 0
+  } else {
+    return Math.min(...array);
+  }
+  
 }
 
 exports.max = function max (array) {
@@ -10,6 +15,3 @@ exports.max = function max (array) {
 exports.avg = function avg (array) {
   return 0;
 }
-
-
-function 
